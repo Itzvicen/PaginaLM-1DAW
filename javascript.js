@@ -1,4 +1,6 @@
-const name = 'John Doe';
-const age = 36;
+const hamburger = document.querySelector('.hamburger');
+const navLink = document.querySelector('.nav__link');
 
-console.log(`My name is ${name} and I am ${age}`);
+hamburger.addEventListener('click', () => {
+  navLink.classList.toggle('hide');
+});
