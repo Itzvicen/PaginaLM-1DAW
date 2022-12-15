@@ -22,9 +22,9 @@ window.addEventListener('scroll', function() {
      // Comprueba si se ha hecho scroll en la página
      if (window.scrollY >= 20) {
     // Si se ha hecho scroll, agrega la clase de CSS que cambia el color de fondo a la navbar
-     document.getElementById("barra").classList ="contenedor-header bg-black";
+     document.getElementById("home").classList ="contenedor-header bg-black";
      } else {
     // Si no se ha hecho scroll, elimina la clase de CSS que cambia el color de fondo de la navbar
-     document.getElementById("barra").classList ="contenedor-header";
+     document.getElementById("home").classList ="contenedor-header";
      }
 });

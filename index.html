@@ -21,7 +21,7 @@
   <script src="./assets/javascript/javascript.js"></script>
 </head>
   <body>  
-    <div id="barra" class="contenedor-header ">
+    <div id="home" class="contenedor-header ">
       <header class="">
           <div class="logo">
               <a href="/">
@@ -30,10 +30,10 @@
           </div>
           <nav id="nav">
               <ul>
-                  <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                  <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                  <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                  <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                  <li><a href="#home" onclick="seleccionar()">Home</a></li>
+                  <li><a href="#nfts" onclick="seleccionar()">Nfts</a></li>
+                  <li><a href="#features" onclick="seleccionar()">Features</a></li>
+                  <li><a href="#team" onclick="seleccionar()">Our Team</a></li>
               </ul>
           </nav>
           <div id="boton" class="botones">
@@ -47,23 +47,31 @@
     <main class="hero">
       <div class="hero-top">
         <div class="hero-1">
-        <div class="one-hero animate__animated animate__bounceInLeft animate__slow">
-          <p>Within everyone's reach</p>
-          <h1>Discover the new collection</h1>
-          <button class="btn-2">Discover now</button>
+          <div class="one-hero animate__animated animate__bounceInLeft animate__slow">
+            <h2>🌟 Within everyone's reach</h2>
+            <h1>Discover the new collection</h1>
+            <p>ReklemNFT is a marketplace that features all forms of digital artworks and collectibles. Powered by the Polygon blockchain infrastructure</p>
+            <div class="button-hero">
+              <button class="btn-2">Discover now</button>
+              <button class="btn-3">How to sell? <i class="fa-solid fa-square-check"></i></button>
+            </div>
+            <div class="colaborations">
+              <h3>TRUSTED AND LOVED BY 100+ CRYPTO FIRST TEAMS</h2>
+              <div class="colaborations-img">
+                <img src="./assets/images/Binance.svg" alt="binance logo">
+                <img id="coinbase" src="./assets/images/Coinbase.svg" alt="coinbase logo">
+                <img id="opensea" src="./assets/images/OpenSea.svg" alt="opensea logo">
+              </div>
+            </div>
+          </div>
+          <div class="img-hero animate__animated animate__bounceInRight animate__slow">
+            <img src="./assets/images/nf.png" alt="nft">
+          </div>
         </div>
-        <div class="img-hero animate__animated animate__bounceInRight animate__slow">
-          <img class="" src="./assets/images/nf.png" alt="">
-      </div>
-        </div>
-        <div class="arrow-down animate__animated animate__bounceInDown animate__slow animate__delay-1s">
-          <p>Click to down</p>
-          <a href="#nfts" class="text-pop-up-bottom"><i class="fa-solid fa-arrow-down"></i></a>
-        </div>
-      </div>
+      </div> 
       <div class="hero-bottom" id="nfts">
-        <h2 id="title-hero">Buy and sell your NFTs on Polygon in the biggest nft marketplace</h2>
-        <p id="text-hero">The ReklemNFT marketplace is a marketplace that features all forms of <span class="remark">digital artworks and collectibles</span>. Powered by the Polygon blockchain infrastructure</p>
+        <h2 id="title-nfts">Buy and sell your NFTs on Polygon in the biggest nft marketplace</h2>
+        <p id="text-nfts">The ReklemNFT marketplace is a marketplace that features all forms of <span class="remark">digital artworks and collectibles</span>. Powered by the Polygon blockchain infrastructure</p>
       </div>
       <div class="container">
         <input type="radio" name="dot" id="one">
