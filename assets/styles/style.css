@@ -24,7 +24,7 @@ body {
 
 @media screen and (max-width: 500px) {
     body {
-        background-image: url("../images/bbblurry.svg");
+        background-image: url("../images/blurry3.svg");
         background-repeat: no-repeat;
     }
 }
