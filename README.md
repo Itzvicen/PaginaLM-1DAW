@@ -2,7 +2,7 @@
 
 ### Trabajo final lenguaje de marcas primer trimestre 
 
-· Live Demo: https://reklem.vicen.me
+· Visitar: https://reklem.vicen.me
 
 ## 💻 Built using:
 
