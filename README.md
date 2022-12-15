@@ -9,3 +9,6 @@
 · HTML
 · CSS
 · JavaScript
+
+![Image text](https://github.com/Itzvicen/PaginaLM-1DAW/blob/master/assets/images/preview.png?raw=true)
+
