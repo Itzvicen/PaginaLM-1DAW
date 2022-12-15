@@ -20,8 +20,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  
   <script src="./assets/javascript/javascript.js"></script>
 </head>
-  <body>  
-    <div id="home" class="contenedor-header ">
+<body>  
+  <div id="home" class="contenedor-header">
       <header class="">
           <div class="logo">
               <a href="/">
@@ -30,21 +30,22 @@
           </div>
           <nav id="nav">
               <ul>
-                  <li><a href="#home" onclick="seleccionar()">Home</a></li>
+                  <li><a href="#" onclick="seleccionar()">Home</a></li>
                   <li><a href="#nfts" onclick="seleccionar()">Nfts</a></li>
                   <li><a href="#features" onclick="seleccionar()">Features</a></li>
-                  <li><a href="#team" onclick="seleccionar()">Our Team</a></li>
+                  <li><a href="#network" onclick="seleccionar()">Our network</a></li>
+                  <li><a href="#sell" onclick="seleccionar()">How to sell?</a></li>
               </ul>
           </nav>
           <div id="boton" class="botones">
-            <button>Sign up</button>
+            <button>Login Metamask</button>
           </div>
           <div class="nav-responsive" onclick="mostrarOcultarMenu()">
               <i class="fa-solid fa-bars"></i>
           </div>
       </header>
-    </div>
-    <main class="hero">
+  </div>
+  <main class="hero">
       <div class="hero-top">
         <div class="hero-1">
           <div class="one-hero animate__animated animate__bounceInLeft animate__slow">
@@ -52,8 +53,8 @@
             <h1>Discover the new collection</h1>
             <p>ReklemNFT is a marketplace that features all forms of digital artworks and collectibles. Powered by the Polygon blockchain infrastructure</p>
             <div class="button-hero">
-              <button class="btn-2">Discover now</button>
-              <button class="btn-3">How to sell? <i class="fa-solid fa-square-check"></i></button>
+              <a href="#nfts"><button class="btn-2">Discover now</button></a>
+              <a href="#sell"><button class="btn-3">How to sell? <i class="fa-solid fa-square-check"></i></button></a>
             </div>
             <div class="colaborations">
               <h3>TRUSTED AND LOVED BY 100+ CRYPTO FIRST TEAMS</h2>
@@ -157,8 +158,8 @@
           <label for="two" class="two"></label>
         </div>
       </div>
-    </main>
-    <section>
+  </main>
+  <section>
       <div class="container-slider">
         <div class="marquee-text-wrap">
           <div class="marquee-text-content">
@@ -238,7 +239,9 @@
               </div>
           </div>
         </div>
-      </div>
+    </div>
+  </section>
+  <section id="features">
       <div class="container-card">
         <div class="box">
           <div class="text-box">
@@ -258,71 +261,75 @@
             <img class="img-card" src="./assets/images/chat-bubble-dynamic-clay.png" alt="nft">
           </div>
         </div>
-    </div>
+      </div>
+  </section>
+  <section id="network">
       <div class="container-team">
-        <h2 id="title-team">Become part of <span>our team </span>now</h2>
-        <div class="box-team">
-          <div class="info-team">
-            <div class="box-img-team">
-              <img class="img-team" src="./assets/images/scalability.webp" alt="">
+          <h2 id="title-team">Become part of <span>our team </span>now</h2>
+          <div class="box-team">
+            <div class="info-team">
+              <div class="box-img-team">
+                <img class="img-team" src="./assets/images/scalability.webp" alt="">
+              </div>
+              <div class="box-text-team">
+                <h2 class="title-team">Scalable network</h2>
+                <p class="p-team">The ReklemNFT marketplace is a marketplace that features all forms of digital </p>
+              </div>
             </div>
-            <div class="box-text-team">
-              <h2 class="title-team">Scalable network</h2>
-              <p class="p-team">The ReklemNFT marketplace is a marketplace that features all forms of digital </p>
-            </div>
-          </div>
 
-          <div class="info-team">
-            <div class="box-img-team">
-              <img class="img-team" src="./assets/images/secure-net.webp" alt="">
+            <div class="info-team">
+              <div class="box-img-team">
+                <img class="img-team" src="./assets/images/secure-net.webp" alt="">
+              </div>
+              <div class="box-text-team">
+                <h2 class="title-team">Secure network</h2>
+                <p class="p-team">The ReklemNFT marketplace is a marketplace that features all forms of digital </p>
+              </div>
             </div>
-            <div class="box-text-team">
-              <h2 class="title-team">Secure network</h2>
-              <p class="p-team">The ReklemNFT marketplace is a marketplace that features all forms of digital </p>
-            </div>
-          </div>
 
-          <div class="info-team">
-            <div class="box-img-team">
-              <img class="img-team" src="./assets/images/file-code.webp" alt="">
+            <div class="info-team">
+              <div class="box-img-team">
+                <img class="img-team" src="./assets/images/file-code.webp" alt="">
+              </div>
+              <div class="box-text-team">
+                <h2 class="title-team">Code with us</h2>
+                <p class="p-team">The ReklemNFT marketplace is a marketplace that features all forms of digital </p>
+              </div>
             </div>
-            <div class="box-text-team">
-              <h2 class="title-team">Code with us</h2>
-              <p class="p-team">The ReklemNFT marketplace is a marketplace that features all forms of digital </p>
-            </div>
-          </div>
 
-          <div class="info-team">
-            <div class="box-img-team">
-              <img class="img-team" src="./assets/images/comunity.webp" alt="">
-            </div>
-            <div class="box-text-team">
-              <h2 class="title-team">Meet the team</h2>
-              <p class="p-team">The ReklemNFT marketplace is a marketplace that features all forms of digital </p>
+            <div class="info-team">
+              <div class="box-img-team">
+                <img class="img-team" src="./assets/images/comunity.webp" alt="">
+              </div>
+              <div class="box-text-team">
+                <h2 class="title-team">Meet the team</h2>
+                <p class="p-team">The ReklemNFT marketplace is a marketplace that features all forms of digital </p>
+              </div>
             </div>
           </div>
-        </div>
-    </div>
-    <div class="container-sell">
-      <h2>Would you like to sell your Nfts?</h2>
-      <p></p>
-      <div class="box-sell">
-        <div class="box-text-sell">
-          <ul>
-            <li id="step-1"><span>1</span><a>Create or login with your MetaMask Wallet</a></li>
-            <li id="step-2"><span>2</span><a>Create or login with your MetaMask Wallet</a></li>
-            <li id="step-3"><span>3</span><a>Create or login with your MetaMask Wallet</a></li>
-            <li id="step-4"><span>4</span><a>Create or login with your MetaMask Wallet</a></li>
-            <li id="step-5"><span>5</span><a>Create or login with your MetaMask Wallet</a></li>
-          </ul>
-        </div>
-        <div class="box-img-sell">
-          <img class="img-sell" src="./assets/images/Crypto portfolio-rafiki-2.svg" alt="">
+      </div>
+  </section>
+  <section id="sell">
+      <div class="container-sell">
+        <h2>Would you like to sell your Nfts?</h2>
+        <p></p>
+        <div class="box-sell">
+          <div class="box-text-sell">
+            <ul>
+              <li id="step-1"><span>1</span><a>Create or login with your MetaMask Wallet</a></li>
+              <li id="step-2"><span>2</span><a>Verify your email asociated in your account </a></li>
+              <li id="step-3"><span>3</span><a>Complete the other additional information</a></li>
+              <li id="step-4"><span>4</span><a>Complete the verification KYC with your DNI</a></li>
+              <li id="step-5"><span>5</span><a>All ready! Now you can buy and sell Nft´s👌🏻</a></li>
+            </ul>
+          </div>
+          <div class="box-img-sell">
+            <img class="img-sell" src="./assets/images/Crypto portfolio-rafiki-2.svg" alt="">
+          </div>
         </div>
       </div>
-    </div>
-    </section>
-    <footer>
+  </section>
+  <footer>
       <div class="container-footer">
         <div class="top-footer">
         <div class="logo-footer">
@@ -331,50 +338,53 @@
           </a>   
         </div>
           <div class="resources-footer">
-            <h3>Resources</h3>
+            <h3>Sitemap</h3>
             <ul>
-              <li>Home</li>
-              <li>Marketplace</li>
-              <li>Blog</li>
-              <li>FAQ</li>
+              <a href="#"><li>Home</li></a>
+              <a href="#nfts"><li>NFTs</li></a>
+              <a href="#features"><li>Features</li></a>
+              <a href="#network"><li>Our network</li></a>
+              <a href="#sell"><li>How to sell?</li></a>
             </ul>
           </div>
           <div class="follow-footer">
             <h3>Follow us</h3>
             <ul>
-              <li>Twitter</li>
-              <li>Instagram</li>
-              <li>Telegram</li>
-              <li>Discord</li>
+              <a href="https://twitter.com/vicendev" rel="noreferrer noopener" target="_blank"><li>Twitter</li></a>
+              <a href="https://instagram.com/itzvicen" rel="noreferrer noopener" target="_blank"><li>Instagram</li></a>
+              <a href="https://github.com/itzvicen" rel="noreferrer noopener" target="_blank"><li>Github</li></a>
+              <a href="https://es.linkedin.com/in/vicente-santiago-perea-185363213" rel="noreferrer noopener" target="_blank"><li>LinkedIn</li></a>
+              <a href="https://vicen.me" rel="noreferrer noopener" target="_blank">My website</a>
             </ul>
           </div>
           <div class="legal-footer">
             <h3>Legal</h3>
             <ul>
-              <li>Terms of use</li>
-              <li>Privacy policy</li>
-              <li>Cookie policy</li>
+              <a href=""><li>Terms of use</li></a>
+              <a href=""><li>Privacy policy</li></a>
+              <a href=""><li>Cookie policy</li></a>
             </ul>
           </div>
           <div class="legal-footer">
             <h3>Legal</h3>
             <ul>
-              <li>Terms of use</li>
-              <li>Privacy policy</li>
-              <li>Cookie policy</li>
+              <a href=""><li>Terms of use</li></a>
+              <a href=""><li>Privacy policy</li></a>
+              <a href=""><li>Cookie policy</li></a>
             </ul>
           </div>
         </div>
         <div class="bottom-footer">
-          <p>© 2022 ReklemNFT. All rights reserved.</p>
+          <p>© 2022 ReklemNFT</p>
+          <p>Made by <a href="https://github.com/itzvicen" rel="noreferrer nooopener" target="_blank">@itzvicen</a> with ❤️.</p>
           <div class="sn-footer">
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-telegram"></i>
-            <i class="fab fa-discord"></i>
+            <a href="https://twitter.com/vicendev" rel="noreferrer noopener" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/itzvicen" rel="noreferrer noopener" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/itzvicen" rel="noreferrer noopener" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://es.linkedin.com/in/vicente-santiago-perea-185363213" rel="noreferrer noopener" target="_blank"><i class="fab fa-linkedin"></i></a>
           </div>
         </div>
       </div>
-    </footer>
-  </body>
+  </footer>
+</body>
 </html>

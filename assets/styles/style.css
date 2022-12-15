@@ -30,6 +30,7 @@ body {
     top: 0;
     left: 0;
     z-index: 99;
+    transition: all 0.3s ease-in-out;
 }
 .contenedor-header header{
     width: 80%;
@@ -72,11 +73,11 @@ body {
     transition: .5s;
     text-decoration: none;
     cursor: pointer;
+    transition: all 0.4s ease-in-out;
 }
 
 .contenedor-header header .botones button:hover{
     scale: 1.1;
-    transition: all 0.5s ease-in-out;
 }
 
 .contenedor-header header nav ul li a{
@@ -88,20 +89,19 @@ body {
     padding: 3px;
     transition: .5s;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
 }
 
 .bg-black {
     background-color: #000000de;
     backdrop-filter: blur(40px);
     -webkit-backdrop-filter: blur(40px);
-    transition: all 0.6s;
 }
 
 .contenedor-header header nav ul li a:hover{
     border-bottom: 3px solid #fff;
-    transition: all 0.2s ease-in-out;
-
 }
+
 .nav-responsive{
     color:#fff;
     padding: 5px 10px;
@@ -111,7 +111,7 @@ body {
     font-size: 18px;
 }
 
-/******** MEDIA QUERIES TABLET Y MOVIL ********/
+/******** MEDIA QUERIES NAVBAR ********/
 
 @media only screen and (max-width : 1200px) {
     .contenedor-header header{
@@ -177,6 +177,10 @@ body {
 
     .contenedor-header header .botones{
         display: none;
+    }
+
+    .contenedor-header header nav ul li a{
+        font-size: 22px;
     }
 }
 
@@ -256,7 +260,8 @@ body {
 .btn-2 {
     background-color: rgb(255, 255, 255);
     color: #000000;
-    padding: 16px 30px;
+    border:2px solid white ;
+    padding: 18.2px 30px;
     border-radius: 8px;
     font-size: 18px;
     font-weight: 600;
@@ -264,6 +269,7 @@ body {
     margin-right: 6px;
     cursor: pointer;
     margin-top: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn-3 {
@@ -277,16 +283,15 @@ body {
     margin-right: 6px;
     cursor: pointer;
     margin-top: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn-2:hover {
     scale: 1.04;
-    transition: all 0.5s ease-in-out;
 }
 
 .btn-3:hover {
     scale: 1.04;
-    transition: all 0.5s ease-in-out;
 }
 
 .img-hero {
@@ -649,7 +654,6 @@ input[type="radio"]{
     }
 }
 
-/*************** MAIN *******************/
 /*************** SLIDER *******************/
 
 
@@ -722,7 +726,7 @@ input[type="radio"]{
     }
 }
 
-
+/********** MEDIA QUERIES SLIDER **********/
 
 @media only screen and (max-width : 1200px) {
     .container-slider {
@@ -883,10 +887,10 @@ input[type="radio"]{
     }
 }
 
-/*************** TEAM *******************/
+/*************** SECCION NETWORK *******************/
 
 .container-team {
-    width: 75%;
+    width: 80%;
     margin: 100px auto;
 }
 
@@ -950,6 +954,13 @@ input[type="radio"]{
     width: 80%;
 }
 
+/********** MEDIA QUERIES SECCION TEAM *********/
+
+@media only screen and (max-width : 1200px) {
+    .container-team {
+        width: 90%;
+    }
+}
 
 @media only screen and (max-width : 500px) {
     .container-team {
@@ -972,16 +983,17 @@ input[type="radio"]{
 /*************** HOW TO SELL? *******************/
 
 .container-sell {
-    width: 75%;
+    width: 80%;
     margin: auto;
 }
 
 .container-sell h2 {
-    font-size: 2.2rem;
-    font-weight: 700;
+    font-size: 2.3rem;
+    font-weight: 800;
     margin-bottom: 1rem;
     line-height: 38px;
     margin-top: 50px;
+    z-index: 200;
 }
 
 .container-sell p {
@@ -990,6 +1002,7 @@ input[type="radio"]{
     margin-top: -20px;
     margin-left: -15px;
     position: relative;
+    z-index: -10;
     background-color: rgba(140, 0, 255, 0.648);
 }
 
@@ -1062,6 +1075,56 @@ input[type="radio"]{
     margin-left: 40px;
 }
 
+@media only screen and (max-width : 1200px) {
+    .container-sell {
+        width: 90%;
+    }
+
+    .box-sell .box-text-sell {
+        width: 50%;
+    }
+
+    .box-sell .box-img-sell {
+        width: 50%;
+    }
+
+    .box-sell .box-text-sell ul li {
+        margin-bottom: 20px;
+        background: rgb(19, 19, 19);
+        padding: 10px;
+        border-radius: 15px;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.047);
+        list-style: none;
+    }
+
+    .container-sell h2 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .container-sell p {
+        width: 40%;
+        margin-left: 160px;
+        margin-bottom: 90px;
+    }
+
+    .box-text-sell ul li span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -15px;
+    }
+
+    .box-text-sell ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+    }
+}
+
 @media only screen and (max-width : 500px) {
     .container-sell {
         width: 90%;
@@ -1090,6 +1153,7 @@ input[type="radio"]{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-left: 0px;
     }
 
     .box-text-sell ul li {
@@ -1112,7 +1176,7 @@ footer {
 }
 
 .container-footer {
-    width: 75%;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -1138,10 +1202,48 @@ footer {
     padding-bottom: 20px;
 }
 
+.bottom-footer p {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.bottom-footer p a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.bottom-footer p a:hover{
+    color: #9b29ff;
+    transition: all 0.4s ease-in-out;
+}
+
 .sn-footer {
     font-size: 20px;
     display: flex;
-    gap: 20px;
+    gap: 10px;
+}
+
+.sn-footer i {
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 7px;
+    transition: all 0.4s ease-in-out;
+}
+
+.sn-footer i:hover {
+    background: rgba(0, 0, 0, 0.399);
+}
+
+.top-footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.top-footer a:hover {
+    color: #9b29ff;
+    transition: all 0.4s ease-in-out;
 }
 
 .logo-footer {
@@ -1201,6 +1303,14 @@ footer {
 .legal-footer ul li {
     list-style: none;
     margin-bottom: 3px;
+}
+
+/********* MEDIA QUERIES FOOTER ***********/
+
+@media only screen and (max-width : 1200px) {
+    .container-footer {
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width : 500px) {
